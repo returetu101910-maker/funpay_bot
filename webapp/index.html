@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>FunPay Garant · Отзывы</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="app">
+
+        <header class="header">
+            <div class="header-text">
+                <div class="header-title">FUNPAY GARANT</div>
+                <div class="header-sub">Отзывы о сделках в Telegram-боте</div>
+            </div>
+        </header>
+
+        <section class="card summary-card">
+            <div class="summary-top">
+                <div class="summary-score">
+                    <span class="score-big">4.8</span>
+                    <span class="score-small">/5</span>
+                </div>
+                <div class="summary-stars-block">
+                    <div class="stars-row">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="summary-count">9 563 отзыва</div>
+                </div>
+            </div>
+
+            <div class="distribution">
+                <div class="dist-row">
+                    <span class="dist-label">5 ★</span>
+                    <div class="dist-bar"><div class="dist-fill" style="width: 100%"></div></div>
+                    <span class="dist-num">7 892</span>
+                </div>
+                <div class="dist-row">
+                    <span class="dist-label">4 ★</span>
+                    <div class="dist-bar"><div class="dist-fill" style="width: 21%"></div></div>
+                    <span class="dist-num">1 668</span>
+                </div>
+                <div class="dist-row">
+                    <span class="dist-label">3 ★</span>
+                    <div class="dist-bar"><div class="dist-fill" style="width: 2%"></div></div>
+                    <span class="dist-num">1</span>
+                </div>
+                <div class="dist-row">
+                    <span class="dist-label">2 ★</span>
+                    <div class="dist-bar"><div class="dist-fill" style="width: 0%"></div></div>
+                    <span class="dist-num">0</span>
+                </div>
+                <div class="dist-row">
+                    <span class="dist-label">1 ★</span>
+                    <div class="dist-bar"><div class="dist-fill" style="width: 1%"></div></div>
+                    <span class="dist-num">2</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="card form-card" id="form-card">
+            <div class="form-title">Ваш отзыв</div>
+            <div class="form-hint">Виден только вам · поддержка <a href="https://t.me/FunPayUaHelper">@FunPayUaHelper</a></div>
+
+            <div class="form-label">Оценка:</div>
+            <div class="rating-input" id="rating-input">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+
+            <div class="form-label">Никнейм:</div>
+            <input type="text" id="nickname" class="form-input" placeholder="Введите свой никнейм">
+
+            <div class="form-label">Текст:</div>
+            <textarea id="review-text" class="form-textarea" placeholder="Как прошла сделка?" rows="4"></textarea>
+
+            <button id="submit-btn" class="btn-publish">Опубликовать</button>
+        </section>
+
+        <section class="reviews-section">
+            <div class="reviews-header">
+                <span class="reviews-title">Все отзывы</span>
+                <span class="reviews-count">9 563</span>
+            </div>
+
+            <div class="reviews-list" id="reviews-list"></div>
+
+            <div class="reviews-note">
+                Вам видны только 5 последних отзывов, чтобы не нагружать сервер
+            </div>
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
